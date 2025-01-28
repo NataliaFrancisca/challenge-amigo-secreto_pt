@@ -23,14 +23,21 @@
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
             </div>
+
+            <span id="alerta" class="span-alerta"></span>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <h3 id="resultado" class="result-element" aria-live="polite"></h3>
 
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
+                </button>
+
+                <button class="button-reset" onclick="resetarSorteio()" aria-label="Resetar para sortear novamente">
+                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
+                    Resetar
                 </button>
             </div>
         </section>
