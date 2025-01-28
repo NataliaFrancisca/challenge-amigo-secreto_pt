@@ -127,22 +127,32 @@ button {
 
 /* Listas */
 ul {
-    list-style-type: none;
+    list-style-type: decimal;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    text-transform: capitalize;
 }
 
-.result-list {
-    margin-top: 15px;
+.result-element {
     color: #05DF05;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    margin: 14px 0;
+    text-transform: capitalize;
 }
 
 /* Botão de sortear título */
+
+.button-container{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+}
+
 .button-draw {
     display: flex;
     align-items: center;
@@ -153,10 +163,34 @@ ul {
     font-size: 16px;
 }
 
-.button-draw img {
+.button-reset {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-text);
+    background-color: var(--color-tertiary);
+    font-size: 16px;
+}
+
+.button-draw img, .button-reset img {
     margin-right: 40px;
 }
 
-.button-draw:hover {
+.button-draw:hover,
+.button-reset:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-draw:disabled{
+    background-color: var(--color-tertiary);
+}
+
+.span-alerta{
+    font-family: "Inter", serif;
+    color: #e55720;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #FFF9EB;
+    padding: 10px 12px;
 }
